@@ -1,12 +1,11 @@
-import Wrapper from './Components/wrapper/index'
-
- 
+import Wrapper from "./Components/wrapper/index";
+import Header from "./Components/Header";
 
 function App() {
   return (
     <Wrapper>
-    Hello world!
-  </Wrapper>
+      <Header />
+    </Wrapper>
   );
 }
 
