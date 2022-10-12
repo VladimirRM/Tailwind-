@@ -7,8 +7,14 @@ const Header
     return (
       <header className='flex'>
         <LogoIcon />
-        <nav>
-          <NavItem/>
+        <nav className='flex space-x-6 ml-8 items-center'>
+          <NavItem text='Features'> sad sad</NavItem>
+
+          <NavItem text='Company' >sad sad</NavItem>
+          <NavItem text='Careers' />
+          <NavItem text='About' />
+
+
         </nav>
 
       </header>
