@@ -1,11 +1,12 @@
+import Wrapper from './Components/wrapper/index'
 
  
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
+    <Wrapper>
     Hello world!
-  </h1>
+  </Wrapper>
   );
 }
 
