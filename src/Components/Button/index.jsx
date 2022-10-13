@@ -10,7 +10,7 @@ const Button = ({
     isFilled = false,
 }) => {
   return (
-    <button className={`text-medium-grey px-5 py-2 ${hasBorder && borderStyles} ${isFilled}`}>{children}</button>
+    <button className={`text-medium-grey px-5 py-2 ${hasBorder && borderStyles} ${isFilled && filledStyles}`}>{children}</button>
   )
 }
 

@@ -1,8 +1,9 @@
 import React from 'react'
 import { ReactComponent as LogoIcon } from '../../images/logo.svg'
+import Button from '../Button';
 import NavItem from '../Nav-item'
 import NavMenu from '../Nav-menu'
-import {FEATURES, COMPANY} from './constants';
+import { FEATURES, COMPANY } from './constants';
 
 const Header
   = () => {
@@ -11,11 +12,11 @@ const Header
         <LogoIcon />
         <nav className='flex space-x-6 ml-8 items-center'>
           <NavItem text='Features'>
-            <NavMenu items={FEATURES}/>
+            <NavMenu items={FEATURES} />
           </NavItem>
 
           <NavItem text='Company' >
-          <NavMenu items={COMPANY}/>
+            <NavMenu items={COMPANY} />
 
           </NavItem>
           <NavItem text='Careers' />
@@ -23,7 +24,10 @@ const Header
 
 
         </nav>
-
+        <div className="ml-auto flex space-x-5">
+          <Button>Login</Button>
+          <Button hasBorder={true}>Register</Button>
+        </div>
       </header>
     )
   }
