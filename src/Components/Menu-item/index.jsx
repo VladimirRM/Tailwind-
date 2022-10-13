@@ -4,7 +4,9 @@ const MenuItem = ({text='',icon}) => {
   return (
     <div>
         {icon}
-        <span></span>
+        <span>
+            {text}
+        </span>
     </div>
   )
 }
