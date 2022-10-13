@@ -9,7 +9,7 @@ const NavItem = ({ text = '', children }) => {
         <div className='relative'>
             <div className="flex space-x-2-cursor-pointer items-center">
                 <span className='text-medium-grey hover:text-almost-black'
-                    onClick={() => children && setSelected(text !==selected ? text:'')}
+                    onClick={() => children && setSelected(text !== selected ? text : '')}
                 >
                     {text}
                 </span>
@@ -17,7 +17,7 @@ const NavItem = ({ text = '', children }) => {
                 {children && selected === text && <ArrowUpIcon />}
             </div>
 
-            {children}
+            {selected && children}
         </div>
     )
 }
