@@ -15,7 +15,7 @@ const MainSection = () => {
                 {`Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n Amet ullam dolorum animi atque vitae exercitationem\n quibusdam maiores adipisci qui harum.`}
             </p> 
         </div>
-        <Button></Button>
+        <Button >Learn more</Button>
     </section>
   )
 }
