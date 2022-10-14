@@ -7,6 +7,7 @@ import Button from '../Button';
 import NavItem from '../Nav-item'
 import NavMenu from '../Nav-menu'
 import { FEATURES, COMPANY } from './constants';
+import MobilMenu from '../Mobile-menu'
 
 const Header
   = () => {
@@ -37,7 +38,9 @@ const Header
         onClick={()=> SetIsMobilMenuOpen(!isMobilMenuOpen)}
         >
           { isMobilMenuOpen ? <MenuCloseIcon/> : <MenuIcon />}
+
         </div>
+        <MobilMenu isOpen={isMobilMenuOpen}/>
       </header>
     )
   }
