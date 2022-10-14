@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import { ReactComponent as LogoIcon } from '../../images/logo.svg'
 import { ReactComponent as MenuIcon } from '../../images/icon-menu.svg'
 import { ReactComponent as MenuCloseIcon } from '../../images/icon-close-menu.svg'
@@ -9,7 +10,7 @@ import { FEATURES, COMPANY } from './constants';
 
 const Header
   = () => {
-    const [isMobilMenuOpen, SetIsMobilMenuOpen] = useState(false)
+    const [isMobilMenuOpen, SetIsMobilMenuOpen] = useState()
     return (
       <header className='flex items-center'>
         <LogoIcon />
@@ -32,8 +33,10 @@ const Header
           <Button>Login</Button>
           <Button hasBorder={true}>Register</Button>
         </div>
-        <div className="flex xl:hidden ml-auto cursor-pointer z-30">
-          <MenuIcon />
+        <div className="flex xl:hidden ml-auto cursor-pointer z-30"
+        onClick={()=> SetIsMobilMenuOpen(!isMobilMenuOpen)}
+        >
+          { isMobilMenuOpen ? <MenuCloseIcon/> : <MenuIcon />}
         </div>
       </header>
     )
