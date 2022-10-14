@@ -3,7 +3,7 @@ import React from 'react'
 
 const borderStyles = 'border-2 border-almost-black rounded-lg '
 const filledStyles = 'text-white bg-black rounded-lg font-bold px-6 py-4 mx-0 hover:bg-transparent hover:text-almost-black border-2 border-almost-black'
-const Button = ({
+ export const Button = ({
 
     children = "",
     hasBorder = false,

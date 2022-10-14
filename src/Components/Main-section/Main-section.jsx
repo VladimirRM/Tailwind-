@@ -1,9 +1,11 @@
+
+
+
 import React from 'react'
-import MenImageMobile from '../../images/image-hero-mobile.png'
-import Button from '../Button'
+import { Button } from '../Button'
+
 import MenImage from '../../images/image-hero-desktop.png';
-
-
+import MenImageMobile from '../../images/image-hero-mobile.png'
 import { ReactComponent as Databiz } from '../../images/client-databiz.svg'
 import { ReactComponent as Audiophile } from '../../images/client-audiophile.svg'
 import { ReactComponent as Meet } from '../../images/client-meet.svg'
@@ -11,9 +13,9 @@ import { ReactComponent as Maker } from '../../images/client-maker.svg'
 
 const MainSection = () => {
     return (
-        <section className='w-full flex-col flex mt-6  h-screen justify-between'>
-            <div className='relative text-left mt-12'>
-                <h1 className="text-3xl xl:text-8xl font-black mt-60 whitespace-pre-line">{`Make\n remote work`}</h1>
+        <section className='w-full flex-col  xl:flex-row flex mt-6 xl:h-screen justify-between'>
+            <div className='relative order-2 text-center xl-order-1 xl:text-left mt-12'>
+                <h1 className="text-3xl xl:text-8xl font-black mt-60 xl:whitespace-pre-line">{`Make\n remote work`}</h1>
                 <p className='text-medium-gray text-lg my-12 whitespace-pre-line'>
                     {`Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n Amet ullam dolorum animi atque vitae exercitationem\n quibusdam maiores adipisci qui harum.`}
                 </p>
@@ -26,8 +28,11 @@ const MainSection = () => {
                     <Maker />
                 </div>
             </div>
-            <div className="flex w-2/4 mt-20">
+            <div className=" hidden xl:flex w-2/4 mt-20 order-2">
                 <img src={MenImage} alt='Men'/>
+            </div>
+            <div className="flex xl:hidden w-full mt-20  mb-8 justify-center order-1">
+                <img src={MenImageMobile} alt='Men'/>
             </div>
         </section>
     )
