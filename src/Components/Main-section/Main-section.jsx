@@ -14,13 +14,13 @@ import { ReactComponent as Maker } from '../../images/client-maker.svg'
 const MainSection = () => {
     return (
         <section className='w-full flex-col  xl:flex-row flex mt-6 xl:h-screen justify-between'>
-            <div className='relative order-2 text-center xl-order-1 xl:text-left mt-12'>
-                <h1 className="text-3xl xl:text-8xl font-black mt-60 xl:whitespace-pre-line">{`Make\n remote work`}</h1>
+            <div className='relative order-2 text-center xl-order-1 xl:text-left mt-12 xl:mt-60'>
+                <h1 className="text-3xl xl:text-8xl mt-6 font-black xl:whitespace-pre-line">{`Make\n remote work`}</h1>
                 <p className='text-medium-gray text-lg my-12 whitespace-pre-line'>
                     {`Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n Amet ullam dolorum animi atque vitae exercitationem\n quibusdam maiores adipisci qui harum.`}
                 </p>
                 <Button isFilled={true}>Learn more</Button>
-                <div className=" flex justify-around  bottom-2 w-full">
+                <div className="  mt-20 xl:absolute flex justify-around  bottom-2 w-full">
 
                     <Databiz />
                     <Audiophile />
