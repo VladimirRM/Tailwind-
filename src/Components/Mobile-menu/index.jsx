@@ -16,6 +16,11 @@ export const MobilMenu = ({ isOpen = false
               {FEATURES.map(({text,icon})=> <MenuItem text={text} icon={icon} key={text}/>)}
             </div>
           </NavItem>
+          <NavItem text='Company'>
+            <div className="flex flex-col space-y-5 p-2">
+              {FEATURES.map(({text,icon})=> <MenuItem text={text} icon={icon} key={text}/>)}
+            </div>
+          </NavItem>
         </nav>
       </div>
 
