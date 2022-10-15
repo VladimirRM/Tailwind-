@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { ReactComponent as ArrowDownIcon } from '../../images/icon-arrow-down.svg'
 import { ReactComponent as ArrowUpIcon } from '../../images/icon-arrow-up.svg'
 
-const NavItem = ({ text = '', children }) => {
+ export const NavItem = ({ text = '', children }) => {
     const [selected, setSelected] = useState('')
     return (
         <div className='relative'>
