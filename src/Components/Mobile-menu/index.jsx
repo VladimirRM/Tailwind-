@@ -1,6 +1,6 @@
 import React from 'react'
 import{ NavItem } from '../Nav-item'
-import { FEATURES} from '../Header/constants';
+import { FEATURES,COMPANY} from '../Header/constants';
 import { MenuItem } from '../Menu-item';
 
 
@@ -18,9 +18,16 @@ export const MobilMenu = ({ isOpen = false
           </NavItem>
           <NavItem text='Company'>
             <div className="flex flex-col space-y-5 p-2">
-              {FEATURES.map(({text,icon})=> <MenuItem text={text} icon={icon} key={text}/>)}
+              {COMPANY.map(({text,icon})=> <MenuItem text={text} icon={icon} key={text}/>)}
             </div>
           </NavItem>
+          <NavItem text='Careers'/>
+          <NavItem text='About'/>
+              <div className="flex flex-col space-y-5">
+                <Button>Login</Button>
+                <Button>Register</Button>
+
+              </div>
         </nav>
       </div>
 
